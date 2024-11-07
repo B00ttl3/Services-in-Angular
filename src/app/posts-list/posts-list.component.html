@@ -1,1 +1,8 @@
 <p>posts-list works!</p>
+
+
+<h1>{{ childUser | json}}</h1>
+
+
+<!-- In here, the user component and posts-list component are both the child component. But we have randered the one child component into another child component instead of rendering it inside the parent component, we only randered the posts-list component to the parent component and the randered the user component which is a child component in here at posts-list component. Becasue of which the posts-list component is now the parent component of user-component -->
+<app-user></app-user>

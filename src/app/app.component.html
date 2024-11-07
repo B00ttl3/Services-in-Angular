@@ -1,5 +1,5 @@
  <!-- Angular Services: It is a class in angular which helps to keep the important info and function at one place, and we can use the piece of info or function from it when we need. it is designed to handle tasks like data fetching, business logic, logging, or any operation that should be shared across components. There is no child or parent component here. these are two absolutely different components, and we can share the data in between them. Means instead of making a same set of data in two different components, what we can do is, we can make an angular service and keep the data there, and then use that angular service in both of the components. -->
 
-<app-posts-list></app-posts-list>
+<app-posts-list [childUser]="users" ></app-posts-list>
 
  <app-user></app-user>

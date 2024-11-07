@@ -13,7 +13,7 @@ import { PostsListComponent } from './posts-list/posts-list.component';
 export class AppComponent {
   title: string = 'This loaded dynamically'
   
-  user: Array<any> = [
+  users: Array<any> = [
     {name: 'Umair', age: 26, email: 'umair@gmail.com'},
     {name: 'Babar', age: 24, email: 'babar@gmail.com'},
     {name: 'Kamran', age: 29, email: 'kamran@gmail.com'},
