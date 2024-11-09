@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { UserComponent } from './user/user.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { JsonPipe } from '@angular/common';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, UserComponent, PostsListComponent, JsonPipe],
+  imports: [PostsListComponent, JsonPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
