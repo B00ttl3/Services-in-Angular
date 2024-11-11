@@ -1,6 +1,7 @@
 import { JsonPipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { UserComponent } from '../user/user.component';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-posts-list',
@@ -12,5 +13,11 @@ import { UserComponent } from '../user/user.component';
 export class PostsListComponent {
 
   @Input() childUser: any;
+
+  userService: any;
+
+  constructor() {
+    this.userService = new UserService();
+  }
 
 }
