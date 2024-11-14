@@ -6,4 +6,11 @@ export class UserService {
         {name: 'Kamran', age: 29, email: 'kamran@gmail.com'},
         {name: 'Rehan', age: 23, email: 'rehan@gmail.com'},
       ]
+
+    
+    work: Array<any> = [
+      {check: 'checked', age: 25, work: 'done'},
+      {check: 'checked', age: 25, work: 'done'},
+      {check: 'checked', age: 25, work: 'done'},
+    ]
 }
