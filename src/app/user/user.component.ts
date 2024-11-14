@@ -11,10 +11,16 @@ import { JsonPipe } from '@angular/common';
 })
 export class UserComponent {
 
-  userService: any;
+  // userService: any;
 
-  constructor () {
-    this.userService = new UserService();
-  }
+  // constructor () {
+  //   this.userService = new UserService();
+  // }
 
+workService: any;
+
+constructor() {
+  this.workService = new UserService();
+}
+  
 }
