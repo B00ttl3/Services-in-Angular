@@ -7,6 +7,9 @@ export class UserService {
         {name: 'Rehan', age: 23, email: 'rehan@gmail.com'},
       ]
 
+      constructor() {
+        console.log('user service new instance created');
+      }
     
     work: Array<any> = [
       {check: 'checked', age: 25, work: 'done'},
