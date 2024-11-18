@@ -16,7 +16,8 @@ export class PostsListComponent {
 
   userService: any;
 
-  constructor() {
+  constructor( private userServiceDI : UserService ) {
+    this.userService = userServiceDI;
     // this.userService = new UserService();
   }
 
