@@ -13,16 +13,12 @@ import { UserService } from './services/user.service';
 export class AppComponent {
   title: string = 'This loaded dynamically'
 
-  // userService: any;
+  userService: any;
 
-  // constructor() {
-  //   this.userService = new UserService();
-  // }
-
-  workService: any;
-
-  constructor() {
-    this.workService = new UserService();
+  constructor( private userServiceDI: UserService ) {
+    this.userService = userServiceDI;
+    // this.userService = new UserService();
+    // console.log(this.userService);
   }
 
 }
