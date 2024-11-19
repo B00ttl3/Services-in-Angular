@@ -9,7 +9,11 @@
 
 <!-- Will get the data from the centralized services, means from user.service.ts. Just like we get that data in app.component.html file. first in posts-list.component.ts file we will have to create a new constructor and then add UserService there, as a new component so we will write new UserService, and then we will assign that to a variable which is userService by this.userService = new UserService() and for that we will have to make a new variable which is userService and assign it as any type. and then here on html we will use string manipulation and will call that variable with .user cause thats the service and then will use json pipe to get the data. This all is same as in html -->
 
-<h1>{{ userService.users | json }}</h1>
+<ul>
+    <li>
+        {{ posts | json }}
+    </li>
+</ul>
 
 <!-- Adding services -->
  
