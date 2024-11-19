@@ -9,10 +9,18 @@
 
 <!-- Will get the data from the centralized services, means from user.service.ts. Just like we get that data in app.component.html file. first in posts-list.component.ts file we will have to create a new constructor and then add UserService there, as a new component so we will write new UserService, and then we will assign that to a variable which is userService by this.userService = new UserService() and for that we will have to make a new variable which is userService and assign it as any type. and then here on html we will use string manipulation and will call that variable with .user cause thats the service and then will use json pipe to get the data. This all is same as in html -->
 
+
+<!-- in the example below we are just fetting the info we want from the array and not the full array, we are using the for loop fromm angular. and make a new variable name post and assigned the old variable posts to it using for. and then make it to track the post after ; and then added the li tags with the string manipulation and then adding new variable's name post and after that we will put what we want either id or title or any other info from the service array itself after the . -->
 <ul>
-    <li>
-        {{ posts | json }}
-    </li>
+    @for(post of posts; track post) {
+        <li>{{ post.title}}</li>
+    }
+</ul>
+
+
+<!-- in the example below we are just rendering the full array from the service. -->
+<ul>
+    <li>{{ posts | json}}</li>
 </ul>
 
 <!-- Adding services -->
