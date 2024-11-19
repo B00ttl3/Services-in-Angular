@@ -10,3 +10,7 @@
 <!-- Dependemcy Injection 2: The reason why we use the dependency injetion, is because the each time we use the service and add it to multiple files, it take new ram space each time making its own blocks. which is not good. So, each time making a new block we use this dependency injection. In this we make one block of one service of angular and then use it each time, because of which that service do not make the new block each time we add it to any file  -->
 
 <!-- Injecting Dependency: to make the service injectable we first have to make it injectable inside its file. after making the file injectable we will make a variable inside the construtor at the ts file which is app.component.ts and we will inject the service inside the constructor with variable which is private userServiceDI, the userServiceDI is the name of the variable and we assigned the userService to it after : and inside the method scope of constructor, means inside the {} we will assign userServiceDI to the this.userService after the =. and that is how we will be able to inject the service -->
+
+
+<!-- Generating Angular service using Angular CLI: run this command in terminal. ng g s services/post (g = generate, s = service, services/ = in which folder, post = service name) -->
+
