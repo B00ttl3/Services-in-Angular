@@ -21,7 +21,7 @@ export class PostsListComponent {
 
   constructor( private userServiceDI : UserService, private postService: PostService ) {
     // this.userService = userServiceDI;
-    this.posts = postService.posts;
+    this.posts = postService.getPost();
   }
 
 

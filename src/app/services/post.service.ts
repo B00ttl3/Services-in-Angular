@@ -15,4 +15,10 @@ export class PostService {
   ]
 
   constructor() { }
+
+
+  // We are not suppose to directly access the variable inside the service, instead we will use a method to get the access, and the getPost() below is the method which we will use to access the variable insde the service
+  getPost() {
+    return this.posts;
+  }
 }
