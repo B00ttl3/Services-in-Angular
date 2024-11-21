@@ -6,7 +6,7 @@ import { UserService } from './services/user.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PostsListComponent, JsonPipe],
+  imports: [PostsListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
