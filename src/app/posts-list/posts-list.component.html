@@ -18,10 +18,14 @@
 </ul>
 
 
+<!-- Let's say that we have some data inside this ts file and we want to push that data inside the service, we will use the push method. for that first we will create a button here and add the click event with the function and then we will create that function inside the ts file. in that functon we will add the details which we want to push inside the service. and then we will post that data by using the this.postService.addPostService(postData), and then we will catch that data inside the service ts file by making the function addPostService (newPost: any) cause new data can be of any type. and then insdie the {} we will push that data insdie the data which we have there by using this.posts.push(newPost);  -->
+<button (click)="addPost()" >Add Post</button>
+
+
 <!-- in the example below we are just rendering the full array from the service. -->
-<ul>
+<!-- <ul>
     <li>{{ posts | json}}</li>
-</ul>
+</ul> -->
 
 <!-- Adding services -->
  

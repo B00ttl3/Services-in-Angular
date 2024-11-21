@@ -21,4 +21,9 @@ export class PostService {
   getPost() {
     return this.posts;
   }
+
+  addPostService(newPost: any) {
+    this.posts.push(newPost);
+  }
+
 }
