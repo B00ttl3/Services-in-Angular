@@ -24,6 +24,8 @@ export class PostsListComponent {
     this.posts = postService.getPost();
   }
 
+  // in this code inside the post.service.ts file   addPostService(newPost: Post) we have changed the data type from any to Post which we are using from the interface in the same file. it will help us to not make any typos or other mistake in the post which we are pushing inside the array of post.service.ts files. 
+
   addPost() {
     let postData = {
       id: 7,

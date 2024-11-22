@@ -33,7 +33,9 @@ export class PostService {
     return this.posts;
   }
 
-  addPostService(newPost: any) {
+  // in the code below we will also change the data type from any to Post. and it will help us to prevent the typos from the external file's data which we are pushing here inside our array.
+
+  addPostService(newPost: Post) {
     this.posts.push(newPost);
   }
 
