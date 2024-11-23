@@ -2,7 +2,7 @@ import { JsonPipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { UserComponent } from '../user/user.component';
 import { UserService } from '../services/user.service';
-import { PostService } from '../services/post.service';
+import { PostService, Post } from '../services/post.service';
 
 @Component({
   selector: 'app-posts-list',
@@ -25,9 +25,10 @@ export class PostsListComponent {
   }
 
   // in this code inside the post.service.ts file   addPostService(newPost: Post) we have changed the data type from any to Post which we are using from the interface in the same file. it will help us to not make any typos or other mistake in the post which we are pushing inside the array of post.service.ts files. 
+  // we have imported the Post from the post.service.ts file and added it here to make sure that the component which we are adding from this file to that file's component, have the same type of data in it and no typos. This is another layer of checking
 
   addPost() {
-    let postData = {
+    let postData:Post = {
       id: 7,
       title: 'post title 7',
       post: 'Dummy post 7'
