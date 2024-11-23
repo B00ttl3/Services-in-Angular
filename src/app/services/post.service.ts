@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
+import { Post } from '../interfaces/post'
 
 // we use interface so that it can help us to be safe from the typos which we can make insdie our code, so now as we have added the interface with the name (Post in this case) and after that we have added the details which we want insid our array, which are id and its type and same with title and post, so if we make any typo or put any other data type instead of what we have defined in interface. it will give us error on the spot which will help us to correct the mistake on the spot.
 
 // or instead of exporting this interface we can just generate a new interface using the terminal cli. just run the command ng g interface interfaces/post (in this g = generate, interface = we want to create an interface, interfaces/ = the path where we want to make it, we made a new folder using / after interfaces, post = file's name)
 
-export interface Post {
-  id: number,
-  title: string,
-  post: string
-}
+// export interface Post {
+//   id: number,
+//   title: string,
+//   post: string
+// }
 
 @Injectable({
   providedIn: 'root'

@@ -2,7 +2,8 @@ import { JsonPipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { UserComponent } from '../user/user.component';
 import { UserService } from '../services/user.service';
-import { PostService, Post } from '../services/post.service';
+import { PostService } from '../services/post.service';
+import { Post } from '../interfaces/post';
 
 @Component({
   selector: 'app-posts-list',
