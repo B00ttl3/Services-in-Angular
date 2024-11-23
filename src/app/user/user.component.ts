@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { UserService } from '../services/user.service';
 import { JsonPipe } from '@angular/common';
 import { PostService } from '../services/post.service';
+import { Post } from '../interfaces/post';
 
 @Component({
   selector: 'app-user',
@@ -19,7 +20,7 @@ export class UserComponent {
   }
 
   addPost() {
-    let postData = {
+    let postData:Post = {
       id: 8,
       title: 'Post Title 8',
       post: 'dummy post 8'
