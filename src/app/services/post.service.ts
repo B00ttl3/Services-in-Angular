@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 // we use interface so that it can help us to be safe from the typos which we can make insdie our code, so now as we have added the interface with the name (Post in this case) and after that we have added the details which we want insid our array, which are id and its type and same with title and post, so if we make any typo or put any other data type instead of what we have defined in interface. it will give us error on the spot which will help us to correct the mistake on the spot.
 
-interface Post {
+export interface Post {
   id: number,
   title: string,
   post: string
